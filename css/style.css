@@ -1,0 +1,69 @@
+/* 
+! Тексттовые свойства
+?font+
+? font-family+
+? font-style+
+? font-variant+
+? font-size+
+? line-height+
+? font-weight+
+
+! Шрифтовые свойства
+? text-align+
+? vertical-align+(особое внимание)
+http://htmlbook.ru/css/vertical-align
+? letter-spacing+
+? word-spasing+
+? text-indent+
+? text-transform+
+? text-decoration+
+? text-shadow+
+? color+
+? @font-face (подключение шрифтов разными способами)+(ocoбое внимание: трансфонтеры, GoogleFonts)
+? word-wrap+
+? white-space+(особое внимание)
+
+!Блочно-строчная модель документа
+? width, max-width, min-width
+https://habr.com/ru/post/483634/
+http://htmlbook.ru/samlayout/blochnaya-verstka/blochnaya-model
+? padding+
+? margin(схлопывание)+
+http://htmlbook.ru/samlayout/blochnaya-verstka/skhlopyvayushchiesya-otstupy
+? overflow+(особое внимание)
+? стилизация ссылок+
+? img+(особое внимание)
+? display: inline-block+(особое внимание)
+https://css-live.ru/articles/zagadochnye-otstupy-mezhdu-inlajn-blokami.html
+? display: block+
+? Валидатор (особое внимание)+
+
+!Оформление
+? outline+
+? border (transparent)+
+? border-radius+
+? opasity+
+? visibility+
+? box-shadow (filter:drop-shadow)+
+*/
+
+
+
+* {
+  box-sizing: border-box;
+  font-family: "Oswald", serif;
+  font-size: 40px;
+}
+.wrapper {
+  min-height: 100%;
+  /* overflow: hidden; */
+}
+
+.main-header {
+}
+
+.main-page {
+}
+
+.main-footer {
+}
