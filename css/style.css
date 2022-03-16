@@ -37,6 +37,7 @@ http://htmlbook.ru/samlayout/blochnaya-verstka/skhlopyvayushchiesya-otstupy
 https://css-live.ru/articles/zagadochnye-otstupy-mezhdu-inlajn-blokami.html
 ? display: block+
 ? Валидатор (особое внимание)+
+? git и github (особое внимание)+
 
 !Оформление
 ? outline+
@@ -45,24 +46,44 @@ https://css-live.ru/articles/zagadochnye-otstupy-mezhdu-inlajn-blokami.html
 ? opasity+
 ? visibility+
 ? box-shadow (filter:drop-shadow)+
+? background
+? background-color+
+? background-image+
+? background-position
+? background-size
+? background-repeat
+? background-attachment
 */
-
-
 
 * {
   box-sizing: border-box;
-  font-family: "Oswald", serif;
   font-size: 40px;
 }
 .wrapper {
   min-height: 100%;
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 
 .main-header {
 }
-
+.general-titile {
+}
 .main-page {
+}
+
+.list {
+  max-width: 500px;
+  margin: 0px auto 0px auto;
+  line-height: 80px;
+  list-style: none;
+  border: 1px solid #000;
+}
+
+.list-item {
+  padding: 0 0 0 80px;
+  background-image: url(../img/car_breaks_24x.png);
+  background-repeat: no-repeat;
+  background-position: 10px 10px;
 }
 
 .main-footer {
