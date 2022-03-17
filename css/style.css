@@ -46,22 +46,24 @@ https://css-live.ru/articles/zagadochnye-otstupy-mezhdu-inlajn-blokami.html
 ? opasity+
 ? visibility+
 ? box-shadow (filter:drop-shadow)+
-? background
+* background: color image position size repeat attachment
 ? background-color+
 ? background-image+
 ? background-position
 ? background-size
 ? background-repeat
 ? background-attachment
+*https://www.youtube.com/playlist?list=PLM6XATa8CAG4F9nAIYNS5oAiPotxwLFIr
 */
 
 * {
   box-sizing: border-box;
-  font-size: 40px;
+  /* font-size: 40px; */
 }
+
 .wrapper {
   min-height: 100%;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .main-header {
@@ -71,20 +73,86 @@ https://css-live.ru/articles/zagadochnye-otstupy-mezhdu-inlajn-blokami.html
 .main-page {
 }
 
-.list {
-  max-width: 500px;
+/* .list {
+  font-size: 0;
+  padding: 0;
   margin: 0px auto 0px auto;
   line-height: 80px;
   list-style: none;
-  border: 1px solid #000;
+  border: 1px solid #000000;
 }
 
 .list-item {
-  padding: 0 0 0 80px;
+  display: inline-block;
+  padding: 0 100px 0 20px;
+  margin: 0px 20px 20px 0px;
+  background-color: #ffffff;
   background-image: url(../img/car_breaks_24x.png);
   background-repeat: no-repeat;
-  background-position: 10px 10px;
-}
+  background-position: 93% 9px;
+  border: 1px solid #000;
+} */
 
 .main-footer {
+}
+
+/** ----------------------------------- */
+
+.whoweare {
+  max-width: 1020px;
+  margin: 50px auto 0px auto;
+  padding-top: 100px;
+
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+
+  background: url(../img/Gears.png) no-repeat 100% 0;
+  border: 1px solid #999999;
+}
+.whoweare__container {
+  max-width: 846px;
+  margin: 0 auto;
+}
+.whoweare__subtitle {
+  margin-bottom: 33px;
+  padding-left: 35px;
+
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+
+  background: url(../img/Overline\ Mark.png) 0 -2px no-repeat;
+  color: #4b4b4b;
+}
+.whoweare__title {
+  margin-bottom: 36px;
+
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-size: 36px;
+  line-height: 42px;
+  font-weight: 900;
+}
+.whoweare__content {
+  margin-bottom: 54px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+
+  color: #4b4b4b;
+}
+
+.whoweare__img {
+  margin-bottom: -120px;
+}
+
+.whoweare__img img {
+  display: block;
 }
