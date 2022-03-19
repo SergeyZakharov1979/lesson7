@@ -267,3 +267,101 @@ https://css-live.ru/articles/zagadochnye-otstupy-mezhdu-inlajn-blokami.html
 .whoweare__img img {
   display: block;
 }
+
+/* *------------------------------------ */
+
+.our-services {
+  padding: 110px 0 122px 0;
+}
+
+.our-services__container {
+  max-width: 1020px;
+  margin: 0 auto;
+}
+
+.our-services__subtitle {
+  margin-bottom: 33px;
+  padding-left: 43px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: #4B4B4B;
+
+  background: url(../img/Overline\ Mark.png) 0 -2px no-repeat;
+}
+
+.our-services__title {
+  margin-bottom: 78px;
+
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 42px;
+  color: #02133C;
+}
+
+.our-services__list {
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  list-style: none;
+}
+
+.our-services__itemlist {
+  display: inline-block;
+  max-width: 324px;
+  padding: 50px 44px 50px 44px;
+  margin: 0 24px 24px 0;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.15px;
+  color: #4B4B4B;
+
+  background-color: #ffffff;
+}
+
+.our-services__itemlist:nth-child(3n + 3) {
+  margin-right: 0;
+}
+
+.our-services__itemlist:hover {
+  filter: drop-shadow(0px 8px 16px rgba(38, 38, 38, 0.24)) drop-shadow(0px 16px 24px rgba(38, 38, 38, 0.2));
+}
+
+.itemlist__img {
+  margin-bottom: 33px;
+}
+
+.itemlist__title {
+  margin-bottom: 20px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 19px;
+  line-height: 26px;
+  text-align: center;
+  color: #02133C;
+}
+
+.itemlist__description {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.15px;
+  color: #4B4B4B;
+}
