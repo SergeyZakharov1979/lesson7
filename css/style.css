@@ -49,12 +49,14 @@ https://css-live.ru/articles/zagadochnye-otstupy-mezhdu-inlajn-blokami.html
 * background: color image position size repeat attachment
 ? background-color+
 ? background-image+
-? background-position
+? background-position+
 ? background-size
-? background-repeat
+? background-repeat+
 ? background-attachment
 *https://www.youtube.com/playlist?list=PLM6XATa8CAG4F9nAIYNS5oAiPotxwLFIr
 */
+
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;600;700&family=Roboto:wght@400;700;900&display=swap");
 
 * {
   box-sizing: border-box;
@@ -63,14 +65,18 @@ https://css-live.ru/articles/zagadochnye-otstupy-mezhdu-inlajn-blokami.html
 
 .wrapper {
   min-height: 100%;
+  background: #F5F5F5;
   /* overflow: hidden; */
 }
 
 .main-header {
 }
-.general-titile {
+.general-title {
 }
 .main-page {
+  padding-bottom: 500px;
+  background:   background: #F5F5F5;
+;
 }
 
 /* .list {
@@ -96,23 +102,126 @@ https://css-live.ru/articles/zagadochnye-otstupy-mezhdu-inlajn-blokami.html
 .main-footer {
 }
 
+
 /** ----------------------------------- */
+
+.contact-block {
+  max-width: 340px;
+  margin: 150px auto;
+  padding: 100px 0 100px 0;
+  border: 1px solid #999999;
+
+  font-family: "Roboto", sans-serif;
+  color: #4b4b4b;
+}
+.contact-block__container {
+  max-width: 237px;
+  margin: 0 auto;
+}
+.contact-block__title {
+  margin-bottom: 28px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0.15px;
+}
+.contact-block__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.15px;
+}
+.contact-block__listitem {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 16px;
+  padding-left: 35px;
+}
+
+.contact-block__listitem:nth-child(1) {
+  background: url(../img/place_24px.png) -1px 2px no-repeat;
+}
+.contact-block__listitem:nth-child(2) {
+  background: url(../img/smartphone_24px.png) 2px 2px no-repeat;
+}
+.contact-block__listitem:nth-child(3) {
+  background: url(../img/email_24px.png) 0 4px no-repeat;
+}
+.contact-block__listitem:nth-child(4) {
+  background: url(../img/timer_24px.png) 1px 2px no-repeat;
+}
+
+/** ----------------------------------- */
+
+.main-screen {
+  padding-top: 280px;
+  padding-bottom: 312px;
+  background: url(../img/BG\ Image.jpg) 0 0 no-repeat;
+}
+
+.main-screen__container {
+  max-width: 1020px;
+  margin: 0 auto;
+  font-size: 0;
+}
+
+.main-screen__title {
+  max-width: 583px;
+  margin: 0;
+  margin-bottom: 48px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 56px;
+  line-height: 56px;
+  color: #ffffff;
+}
+
+.main-screen__btn {
+  display: inline-block;
+  min-width: 211px;
+  max-width: 300px;
+  padding: 12px 47px 12px 19px;
+  margin: 0;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+  text-transform: uppercase;
+
+  color: #ffffff;
+  background: url(../img/arrow_forward_24px.png) 96% 50% no-repeat,url(../img/Button\ Treatment\ 48px.png) 100% 0 no-repeat, url(../img/Button\ Default\ -\ Filled.jpg) 0 0 repeat-x;
+  /* border-radius: 2px; */
+}
 
 .whoweare {
   max-width: 1020px;
-  margin: 50px auto 0px auto;
+  margin: -80px auto 250px auto;
   padding-top: 100px;
 
   font-family: "Roboto", sans-serif;
   font-size: 16px;
-
-  background: url(../img/Gears.png) no-repeat 100% 0;
-  border: 1px solid #999999;
+  background: #ffffff url(../img/Gears.png) no-repeat 100% 0;
+  border: 1px solid transparent;
 }
+
 .whoweare__container {
   max-width: 846px;
   margin: 0 auto;
 }
+
 .whoweare__subtitle {
   margin-bottom: 33px;
   padding-left: 35px;
@@ -127,6 +236,7 @@ https://css-live.ru/articles/zagadochnye-otstupy-mezhdu-inlajn-blokami.html
   background: url(../img/Overline\ Mark.png) 0 -2px no-repeat;
   color: #4b4b4b;
 }
+
 .whoweare__title {
   margin-bottom: 36px;
 
@@ -136,6 +246,7 @@ https://css-live.ru/articles/zagadochnye-otstupy-mezhdu-inlajn-blokami.html
   line-height: 42px;
   font-weight: 900;
 }
+
 .whoweare__content {
   margin-bottom: 54px;
 
