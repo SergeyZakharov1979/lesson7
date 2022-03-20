@@ -65,7 +65,6 @@ https://css-live.ru/articles/zagadochnye-otstupy-mezhdu-inlajn-blokami.html
 
 .wrapper {
   min-height: 100%;
-  background: #F5F5F5;
   /* overflow: hidden; */
 }
 
@@ -75,8 +74,7 @@ https://css-live.ru/articles/zagadochnye-otstupy-mezhdu-inlajn-blokami.html
 }
 .main-page {
   padding-bottom: 500px;
-  background:   background: #F5F5F5;
-;
+  background: #f5f5f5;
 }
 
 /* .list {
@@ -102,9 +100,8 @@ https://css-live.ru/articles/zagadochnye-otstupy-mezhdu-inlajn-blokami.html
 .main-footer {
 }
 
-
 /** ----------------------------------- */
-
+/* 
 .contact-block {
   max-width: 340px;
   margin: 150px auto;
@@ -154,14 +151,16 @@ https://css-live.ru/articles/zagadochnye-otstupy-mezhdu-inlajn-blokami.html
 }
 .contact-block__listitem:nth-child(4) {
   background: url(../img/timer_24px.png) 1px 2px no-repeat;
-}
+} */
 
 /** ----------------------------------- */
+
+/**----------------MAIN-SCREEN---------------- */
 
 .main-screen {
   padding-top: 280px;
   padding-bottom: 312px;
-  background: url(../img/BG\ Image.jpg) 0 0 no-repeat;
+  background: #002034 url(../img/BG\ Image.jpg) 0 0 / cover no-repeat;
 }
 
 .main-screen__container {
@@ -182,29 +181,33 @@ https://css-live.ru/articles/zagadochnye-otstupy-mezhdu-inlajn-blokami.html
   color: #ffffff;
 }
 
-.main-screen__btn {
-  display: inline-block;
-  min-width: 211px;
+.btn {
+  display: block;
   max-width: 300px;
   padding: 12px 47px 12px 19px;
   margin: 0;
 
   white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  text-align: center;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
   font-size: 12px;
   line-height: 24px;
-  letter-spacing: 0.15px;
+  text-align: center;
   text-transform: uppercase;
+  letter-spacing: 0.15px;
+  text-overflow: ellipsis;
+  overflow: hidden;
 
   color: #ffffff;
-  background: url(../img/arrow_forward_24px.png) 96% 50% no-repeat,url(../img/Button\ Treatment\ 48px.png) 100% 0 no-repeat, url(../img/Button\ Default\ -\ Filled.jpg) 0 0 repeat-x;
+  background: url(../img/arrow_forward_24px.png) 96% 50% no-repeat,
+    url(../img/Button\ Treatment\ 48px.png) 100% 0 no-repeat,
+    url(../img/Button\ Default\ -\ Filled.jpg) 0 0 repeat-x;
   /* border-radius: 2px; */
+  border: none;
 }
+
+/* *---------------WHOWEARE-------------------- */
 
 .whoweare {
   max-width: 1020px;
@@ -268,7 +271,7 @@ https://css-live.ru/articles/zagadochnye-otstupy-mezhdu-inlajn-blokami.html
   display: block;
 }
 
-/* *------------------------------------ */
+/* *---------------OUR-SERVICES-----------------*/
 
 .our-services {
   padding: 110px 0 122px 0;
@@ -283,14 +286,14 @@ https://css-live.ru/articles/zagadochnye-otstupy-mezhdu-inlajn-blokami.html
   margin-bottom: 33px;
   padding-left: 43px;
 
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
   font-size: 12px;
   line-height: 24px;
   letter-spacing: 2.5px;
   text-transform: uppercase;
-  color: #4B4B4B;
+  color: #4b4b4b;
 
   background: url(../img/Overline\ Mark.png) 0 -2px no-repeat;
 }
@@ -303,11 +306,12 @@ https://css-live.ru/articles/zagadochnye-otstupy-mezhdu-inlajn-blokami.html
   font-weight: 900;
   font-size: 36px;
   line-height: 42px;
-  color: #02133C;
+  color: #02133c;
 }
 
 .our-services__list {
   margin: 0;
+  margin-bottom: 66px;
   padding: 0;
   font-size: 0;
   list-style: none;
@@ -319,14 +323,14 @@ https://css-live.ru/articles/zagadochnye-otstupy-mezhdu-inlajn-blokami.html
   padding: 50px 44px 50px 44px;
   margin: 0 24px 24px 0;
 
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   text-align: center;
   letter-spacing: 0.15px;
-  color: #4B4B4B;
+  color: #4b4b4b;
 
   background-color: #ffffff;
 }
@@ -336,7 +340,8 @@ https://css-live.ru/articles/zagadochnye-otstupy-mezhdu-inlajn-blokami.html
 }
 
 .our-services__itemlist:hover {
-  filter: drop-shadow(0px 8px 16px rgba(38, 38, 38, 0.24)) drop-shadow(0px 16px 24px rgba(38, 38, 38, 0.2));
+  filter: drop-shadow(0px 8px 16px rgba(38, 38, 38, 0.24))
+    drop-shadow(0px 16px 24px rgba(38, 38, 38, 0.2));
 }
 
 .itemlist__img {
@@ -346,22 +351,170 @@ https://css-live.ru/articles/zagadochnye-otstupy-mezhdu-inlajn-blokami.html
 .itemlist__title {
   margin-bottom: 20px;
 
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 900;
   font-size: 19px;
   line-height: 26px;
   text-align: center;
-  color: #02133C;
+  color: #02133c;
 }
 
 .itemlist__description {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   text-align: center;
   letter-spacing: 0.15px;
-  color: #4B4B4B;
+  color: #4b4b4b;
+}
+
+.btn--center {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+/* *--------------OUR-IMPACT--------------------*/
+
+.our-impact {
+  padding: 112px 0 212px 0;
+  background: #02133c url(../img/overlay\ image.png) 0 0 no-repeat;
+}
+
+.our-impact__container {
+  max-width: 1020px;
+  margin: 0 auto;
+}
+
+.our-impact__bg-img {
+  float: right;
+  margin: -180px 0 0 0;
+  text-align: right;
+  font-size: 0;
+}
+
+.our-impact__bg-img img {
+  display: block;
+}
+
+.our-impact__subtitle {
+  margin-bottom: 33px;
+  padding-left: 43px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: #d5d5d5;
+
+  background: url(../img/Overline\ Markwhite.png) 0 -2px no-repeat;
+}
+
+.our-impact__title {
+  max-width: 411px;
+  margin-bottom: 79px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 42px;
+  color: #ffffff;
+}
+
+.our-impact__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.our-impact__listitem {
+  display: inline-block;
+  max-width: 237px;
+  min-width: 210px;
+  padding-left: 87px;
+  margin-right: 24px;
+  overflow: hidden;
+  /* line-height: 40px; */
+}
+
+.our-impact__listitem:nth-child(4n+4) {
+  margin-right: 0;
+}
+
+.our-impact__listitem:nth-child(1) {
+  background: url(../img/car_oil-24x.png) 0 0 no-repeat;
+}
+.our-impact__listitem:nth-child(2) {
+  margin-bottom: -24px;
+  background: url(../img/car_transmission_24x.png) 0 0 no-repeat;
+  border: 1px solid transition;
+}
+.our-impact__listitem:nth-child(3) {
+  background: url(../img/car_alignment_24x.png) 0 0 no-repeat;
+}
+.our-impact__listitem:nth-child(4) {
+  background: url(../img/car_engine_2_24x.png) 0 0 no-repeat;
+}
+
+.our-impact__listitem p {
+  margin: 0;
+  padding: 0;
+  margin-top: 10px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 42px;
+  color: #C40B0B;
+}
+
+.our-impact__listitem span {
+  display: inline-block;
+  margin: 0;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+  color: #F5F5F5;
+}
+
+.bottom-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1020px;
+  margin: -70px auto 0 auto;
+  padding: 43px 70px 48px 70px;
+  background-color: #fff;
+}
+
+.bottom-block__paragraph {
+  /* display: inline-block; */
+  max-width: 562px;
+  margin: 0;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 30px;
+  color: #02133C;
+}
+
+.wrap-btn {
+
+}
+
+.btn--bottom-block {
+  /* background: none;
+  color: #000;
+  border: 1px solid #000; */
 }
